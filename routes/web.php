@@ -22,3 +22,8 @@ Route::post('/karya/{id}/update','KaryaController@update');
 Route::get('/karya/{id}/delete','KaryaController@delete');
 
 Route::get('/panti','PantiController@index');
+Route::post('/panti/create','PantiController@create');
+Route::get('/panti/{id}/edit','PantiController@edit');
+Route::post('/panti/{id}/update','PantiController@update');
+Route::get('/panti/{id}/delete','PantiController@delete');
+Route::get('/panti/{id}/profile','PantiController@profile');

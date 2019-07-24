@@ -25,13 +25,13 @@
 					<th>Judul</th>
 					<th>Jenis</th>
 					<th>Deskripsi</th>
-					<th>Nama Anak</th>
+					<th>Nama Anak</th>				
 					<th>Photo</th>
 					<th> </th>
 				</tr>
 				@foreach($data_karya as $karya)
 				<tr>
-					<td>{{$karya->judul}}</td>
+					<td><a href="/karya/{{$karya->id}}/profile">{{$karya->judul}}</a></td>
 					<td>{{$karya->jenis}}</td>
 					<td>{{$karya->deskripsi}}</td>
 					<td>{{$karya->nama_anak}}</td>

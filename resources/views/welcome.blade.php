@@ -1,99 +1,273 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!DOCTYPE html>
+<html lang="en">
 
-        <title>Laravel</title>
+<head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+  <title>Orph | Let's Connect with Orphan</title>
 
-            .full-height {
-                height: 100vh;
-            }
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <script src="https://code.iconify.design/1/1.0.2/iconify.min.js"></script>
 
-            .position-ref {
-                position: relative;
-            }
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.css" rel="stylesheet">
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+</head>
 
-            .content {
-                text-align: center;
-            }
+<body>
 
-            .title {
-                font-size: 84px;
-            }
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-xl navbar-light bg-light" >
+    <a class="navbar-brand" href="/"><img style="width:340;height:70px;" src="/images/LogoOrph.png"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link"  href="#" style="color: #42CCB7"><b>Tambah Panti</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#" style="color: #42CCB7"><b>Kunjung & Undang </b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #42CCB7"><b>Relawan </b></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/karya" style="color: #42CCB7"><b>Karya </b></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/karya" style="color: #42CCB7"><b>Tentang Kami </b></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/karya" style="color: #42CCB7"><b>Masuk </b></a>
+        </li>
+      
+    </div>
+  </nav>
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">Bantu Panti? Cari Di Sini</h1>
         </div>
-    </body>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Masukkan Nama Panti">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="submit" class="button">Cari</button>
+              </div>
+            </div>  
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Icons Grid 
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row" style="color: #42CCB7">
+        <div class="col-lg-4" style="color: #42CCB7">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i>  <span class="iconify" data-icon="simple-line-icons:envelope-letter" data-inline="false"></span></i>
+            </div>
+            <h3>Tambah Panti</h3>
+            
+          </div>
+        </div>
+        <div class="col-lg-4" style="color: #42CCB7">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i>  <span class="iconify" data-icon="simple-line-icons:envelope-letter" data-inline="false"></span></i>
+            </div>
+            <h3>Kunjung & Undang</h3>
+            <p class="lead mb-0"></p>
+          </div>
+        </div>
+        <div class="col-lg-4" style="color: #42CCB7">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div>
+            <h3>Relawan</h3>
+            
+          </div>
+        </div>
+        <div class="col-lg-4" style="color: #42CCB7">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3" style="color: #42CCB7">
+            <div class="features-icons-icon d-flex" >
+              <i class="icon-check m-auto text-primary" ></i>
+            </div>
+            <h3>Karya Anak Panti Asuhan</h3>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Image Showcases -->
+  <section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/images/AddPA.png');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Tambah Panti</h2>
+          <p class="lead mb-0">Mari tambahkan lokasi panti yang belum terdaftar disini! Buat semua orang mengetahuinya agar donasi menghampiri panti</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('/images/Invite.png');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>Kunjung & Undang</h2>
+          <p class="lead mb-0">Kami membantu proses administrasi mengundang/mengunjungi anak-anak panti asuhan agar dapat diselesaikan secara mudah dan bisa tak perlu datang ke panti asuhan</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/images/Volunteer.png');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Relawan</h2>
+          <p class="lead mb-0">Demi meningkatkan kualitas SDM anak panti jadilah relawan mengajar keterampilan. Masukkan berkas pengajuan relawanmu disini!</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('/images/Art.png');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>Karya Anak Panti Asuhan</h2>
+          <p class="lead mb-0">Menampilkan berbagai karya yang dihasilkan anak panti asuhan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials 
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">What people are saying...</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+            <h5>Margaret E.</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+            <h5>Fred S.</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+            <h5>Sarah W.</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <!-- Call to Action -->
+  <section class="call-to-action text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4">Belum punya akun? Daftar Sekarang!</h2>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Masukkan Emailmu...">
+              </div>
+              <div class="col-12 col-md-3" >
+                <button type="submit" class="btn btn-block btn-lg btn-primary" >Daftar!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <a href="#" style="color: #42CCB7 " > <font size="6"><b>#LetsConnectwithOrphan</b></font></a>     
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#" style="color: #42CCB7">Tentang Kami</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" style="color: #42CCB7">Kontak</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" style="color: #42CCB7">Lokasi</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" style="color: #42CCB7">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0" style="color: #42CCB7">&copy; Orph-2019. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#" style="color: #42CCB7">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#" style="color: #42CCB7">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" style="color: #42CCB7">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
