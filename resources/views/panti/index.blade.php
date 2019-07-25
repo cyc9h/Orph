@@ -23,7 +23,7 @@
 			<table class="table table-hover">
 				<tr>
 					<th>Nama</th>
-					<th>Koordinat</th>
+					<th>Pengurus</th>
 					<th>Butuh Fasilitas</th>
 					<th>Jumlah Anak</th>
 					<th>Jumlah Pengurus</th>
@@ -32,13 +32,13 @@
 					<th>Email</th>
 					<th>Sosial Media</th>
 					<th>Status</th>
-					<th>Photo</th>
+					
 					<th> </th>
 				</tr>
 				@foreach($data_panti as $panti)
 				<tr>
 					<td><a href="/panti/{{$panti->id}}/profile">{{$panti->nama}}</a></td>
-					<td>{{$panti->point_obj}}</td>
+					<td>{{$panti->nik_pengurus}}</td>
 					<td>{{$panti->butuh_fasilitas}}</td>
 					<td>{{$panti->jumlah_anak}}</td>
 					<td>{{$panti->jumlah_pengurus}}</td>
@@ -47,7 +47,6 @@
 					<td>{{$panti->email}}</td>
 					<td>{{$panti->sosmed}}</td>
 					<td>{{$panti->status_id}}</td>
-					<td>{{$panti->photo}}</td>
 					<td>
 						<a href="/panti/{{$panti->id}}/edit" class="btn btn-warning btn-sm"><i class="fa fa-edit" style="font-size:24px"></i></a>
 						<a href="/panti/{{$panti->id}}/delete" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Dihapus?') "><i class="fa fa-trash-o" style="font-size:24px"></i></a>
