@@ -29,3 +29,6 @@ Route::get('/panti/{id}/delete','PantiController@delete');
 Route::get('/panti/{id}/profile','PantiController@profile');
 
 Route::get('/adminpanti','AdminpantiController@index');
+
+Route::get('/kunjung','KunjungController@index');
+Route::post('/kunjung/create','KunjungController@create');

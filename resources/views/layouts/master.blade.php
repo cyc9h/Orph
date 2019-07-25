@@ -1,147 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Orph | Let's Connect with Orphan</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="asset/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="asset/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <script src="https://code.iconify.design/1/1.0.2/iconify.min.js"></script>
-
-  <!-- Custom styles for this template -->
-  <link href="asset/css/landing-page.css" rel="stylesheet">
-
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    
-   
-  <!-- Navigation -->
 
-  <nav class="navbar navbar-light bg-light static-top">
-    <div class="container">
-    	
-      <a class="navbar-brand" href="#"><img style="width:340;height:70px;" src="asset/img/LogoOrph.png"></a>
+  <nav class="navbar navbar-expand-xl navbar-light bg-light" >
+    <a class="navbar-brand" href="/"><img style="width:340;height:70px;" src="/images/LogoOrph.png"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link"  href="#" style="color: #42CCB7"><b>Profil</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#" style="color: #42CCB7"><b>Kunjung & Undang</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #42CCB7"><b>Relawan</b></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/karya" style="color: #42CCB7"><b>Karya </b><span class="sr-only">(current)</span></a>
+        </li>
       
-       <a class="button1" href="addpanti" style="color: #42CCB7"><b>Tambah Panti</b></a>    
-       <a class="button1" href="#" style="color: #42CCB7"><b>Kunjung & Undang </b> </a>
-       <a class="button1" href="#" style="color: #42CCB7"><b>Relawan </b></a>
-       <a class="button1" href="#" style="color: #42CCB7"><b>Karya </b></a>
-       <a class="button1" href="#" style="color: #42CCB7"><b>Tentang Kami </b></a>
-      <a class="button1" href="#" style="color: #42CCB7"><b>Masuk</b></a>
-  		
     </div>
   </nav>
-    
-  <!-- Masthead -->
+  <div class="container">
+    @yield('content')
+  </div>
+  
 
-  <header class="masthead text-white text-center">
-    
-    <div class="overlay">
-    @yield('map')      
-    </div>
-    
-  </header>
-
-  <!-- Image Showcases -->
-  <section class="showcase">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('asset/img/AddPA.png');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Tambah Panti</h2>
-          <p class="lead mb-0">Mari tambahkan lokasi panti yang belum terdaftar disini! Buat semua orang mengetahuinya agar donasi menghampiri panti</p>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('asset/img/Invite.png');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h2>Kunjung & Undang</h2>
-          <p class="lead mb-0">Kami membantu proses administrasi mengundang/mengunjungi anak-anak panti asuhan agar dapat diselesaikan secara mudah dan bisa tak perlu datang ke panti asuhan</p>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('asset/img/Volunteer.png');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Relawan</h2>
-          <p class="lead mb-0">Demi meningkatkan kualitas SDM anak panti jadilah relawan mengajar keterampilan. Masukkan berkas pengajuan relawanmu disini!</p>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('asset/img/Art.png');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h2>Karya Anak Panti Asuhan</h2>
-          <p class="lead mb-0">Menampilkan berbagai karya yang dihasilkan anak panti asuhan</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer bg-light">
-    <div class="container">
-      <a href="#" style="color: #42CCB7 " > <font size="6"><b>#LetsConnectwithOrphan</b></font></a>     
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-
-          <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#" style="color: #42CCB7">Tentang Kami</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" style="color: #42CCB7">Kontak</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" style="color: #42CCB7">Lokasi</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" style="color: #42CCB7">Privacy Policy</a>
-            </li>
-          </ul>
-          <p class="text-muted small mb-4 mb-lg-0" style="color: #42CCB7">&copy; Orph-2019. All Rights Reserved.</p>
-        </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="#" style="color: #42CCB7">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="#" style="color: #42CCB7">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" style="color: #42CCB7">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="asset/vendor/jquery/jquery.min.js"></script>
-  <script src="asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>

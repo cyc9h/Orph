@@ -87,9 +87,17 @@
 						    <input name="nama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Panti">
 						  </div>
 						  <div class="form-group">
-						    <label for="exampleInputEmail1">Koordinat Panti</label>
-						    <input name="point_obj" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="lat, long">
-						  </div>
+                            <label for="exampleInputEmail1">Alamat</label>
+                            <input name="alamat" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Alamat Panti">
+                          </div>
+						  <div class="form-group">
+                            <label for="exampleInputEmail1">Latitude Lokasi</label>
+                            <input name="lat_" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Latitude">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Longitude Lokasi</label>
+                            <input name="long_" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Longitude">
 
 						  <div class="form-group">
 						    <label for="exampleInputEmail1">Fasilitas</label>
