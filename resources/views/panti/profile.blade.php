@@ -1,4 +1,6 @@
+@extends('layouts.master')
 
+@section('content')
 
 <div class="clearfix">
 		<!-- LEFT COLUMN -->
@@ -223,4 +225,5 @@
 			<!-- END TABBED CONTENT -->
 		</div>
 		<!-- END RIGHT COLUMN -->
-	</div>		
+	</div>
+@endsection		
