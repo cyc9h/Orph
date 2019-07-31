@@ -4,9 +4,16 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
 }
+
+
 
 h1,
 h2,
@@ -47,11 +54,13 @@ header.masthead h1 {
   }
   header.masthead h1 {
     font-size: 3rem;
+    padding-top: 7rem;
   }
 }
 
 .showcase .showcase-text {
   padding: 3rem;
+  padding-top: 7rem;
 }
 
 .showcase .showcase-img {
@@ -62,6 +71,7 @@ header.masthead h1 {
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
+    padding-top: 7rem;
   }
 }
 
@@ -139,8 +149,61 @@ header.masthead h1 {
   top: 0;
   left: 0;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  max-height: 700px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
 
-footer.footer {
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+
+
+.card button:hover {
+  opacity: 0.7;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+footer
+.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }

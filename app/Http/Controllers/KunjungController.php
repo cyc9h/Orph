@@ -13,6 +13,7 @@ class KunjungController extends Controller
         }
     public function create(Request $request)
         {
+            dd($request);
         	\App\Kunjung::create($request->all());
         	return redirect('/kunjung')->with('sukses','Data berhasil disimpan');
         }	

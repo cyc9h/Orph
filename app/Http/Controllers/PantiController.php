@@ -14,7 +14,7 @@ class PantiController extends Controller
         public function create(Request $request)
         {
         	\App\Panti::create($request->all());
-        	return redirect('/panti')->with('sukses','Data berhasil disimpan');
+        	return redirect('/dashboard')->with('sukses','Data berhasil disimpan');
         }	
 
         public function edit($id)

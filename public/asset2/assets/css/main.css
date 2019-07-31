@@ -1018,9 +1018,7 @@ ul.activity-list > li {
     float: right;
     width: 58%;
     height: 100%;
-    position: relative;
-    background-image: url("../../assets/img/login-bg.jpg");
-    background-repeat: no-repeat;
+    position: relative;    background-repeat: no-repeat;
     background-size: cover; }
     .auth-box .right:before {
       display: inline-block;
@@ -1070,7 +1068,8 @@ ul.activity-list > li {
     width: 50%;
     padding: 40px 60px; }
     .auth-box.lockscreen .logo {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      max-width: 6789px; }
     .auth-box.lockscreen .user {
       margin-bottom: 30px; }
       .auth-box.lockscreen .user .name {
@@ -1177,7 +1176,7 @@ ul.activity-list > li {
   .profile-header .profile-main {
     position: relative;
     padding: 20px;
-    background-image: url("../../assets/img/profile-bg.png");
+    background-image: url("assets/img/profile-bg.png");
     background-repeat: no-repeat;
     background-size: cover; }
   .profile-header .name {

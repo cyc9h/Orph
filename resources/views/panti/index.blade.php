@@ -70,18 +70,7 @@
 				      <div class="modal-body">
 				      	<form action="/panti/create" method="POST">
 				      		{{csrf_field()}}
-				      	  <div class="form-group">
-						    <label for="exampleInputEmail1">ID</label>
-						    <input name="id" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ID panti-">
-						  </div>
-				      	  <div class="form-group">
-						    <label for="exampleInputEmail1">NIK User</label>
-						    <input name="nik_user" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NIK User">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputEmail1">NIK Pengurus</label>
-						    <input name="nik_pengurus" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NIK Pengurus">
-						  </div>
+				      	  
 						  <div class="form-group">
 						    <label for="exampleInputEmail1">Nama Panti</label>
 						    <input name="nama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Panti">
@@ -110,7 +99,7 @@
 						  </div>
 
 						  <div class="form-group">
-						    <label for="exampleInputEmail1">ID Jenis Panti</label>
+						    <label for="exampleInputEmail1">Jenis Panti</label>
 						    <input name="jenispanti_id" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ID Jenis Panti ">
 						  </div>
 
@@ -140,7 +129,7 @@
 						  </div>
 
 						  <div class="form-group">
-						    <label for="exampleInputEmail1">ID Status Panti</label>
+						    <label for="exampleInputEmail1">Status Panti</label>
 						    <input name="status_id" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ID Status Panti">
 						  </div>
 
@@ -160,6 +149,7 @@
 				      </div>
 				    </div>
 				  </div>
+				  
 				
 
 @endsection
